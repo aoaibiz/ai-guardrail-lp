@@ -18,14 +18,37 @@
     gtag('js', new Date());
     gtag('config', 'G-H50PDQBE91');
   </script>
+
+  <script>
+    // 予約クリック：イベント送信→TimeRexを開く（離脱でイベントが落ちないように工夫）
+    function openTimerexWithTracking(location) {
+      const url = "https://timerex.net/s/info_6c5e_d556/51fb7fcc";
+      try {
+        gtag('event', 'book_call_click', {
+          location: location,
+          transport_type: 'beacon',
+          event_callback: function () {
+            window.open(url, '_blank', 'noopener');
+          }
+        });
+      } catch (e) {
+        // gtag未準備でも開く
+      }
+      // callbackが動かない環境用の保険（必ず開く）
+      setTimeout(function () {
+        window.open(url, '_blank', 'noopener');
+      }, 700);
+      return false;
+    }
+  </script>
 </head>
+
 <body>
 
   <!-- Background Grid Effect -->
   <div class="bg-grid"></div>
   <div class="blob-top"></div>
   <div class="blob-bottom"></div>
-
   <!-- Header -->
   <header class="header">
     <div class="container__header">
@@ -49,6 +72,7 @@
           経営者・DX責任者向け。<br />
           AIに権限を渡す前に「事故らない就業規則（ガードレール）」を作ります。
         </p>
+
         <div class="benefits">
           <div class="benefit-item">
             <div class="benefit-item__icon">01</div>
@@ -76,12 +100,13 @@
         </div>
 
         <div class="cta-group">
-          <!-- HERO: TimeRex + event -->
-          <a href="https://timerex.net/s/info_6c5e_d556/51fb7fcc" target="_blank" rel="noopener noreferrer"
-            class="btn btn--primary"
-            onclick="gtag('event','book_call_click',{location:'hero'});">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
+          <a href="#" class="btn btn--primary" onclick="return openTimerexWithTracking('hero');">
+            導入リスク診断（15分）を予約する<span class="arrow">→</span>
+          </a>
 
-          <a href="#docs" class="btn btn--secondary">テンプレ（規程/ログ/評価）を見る<span class="arrow">→</span></a>
+          <a href="#docs" class="btn btn--secondary">
+            テンプレ（規程/ログ/評価）を見る<span class="arrow">→</span>
+          </a>
         </div>
       </div>
     </div>
@@ -167,14 +192,12 @@
       </div>
 
       <div class="pricing__cta">
-        <!-- PRICING: TimeRex + event -->
-        <a href="https://timerex.net/s/info_6c5e_d556/51fb7fcc" target="_blank" rel="noopener noreferrer"
-          class="btn btn--primary"
-          onclick="gtag('event','book_call_click',{location:'pricing'});">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
+        <a href="#" class="btn btn--primary" onclick="return openTimerexWithTracking('pricing');">
+          導入リスク診断（15分）を予約する<span class="arrow">→</span>
+        </a>
       </div>
     </div>
   </section>
-
   <section class="docs" id="docs">
     <div class="container">
       <h2 class="docs__title">提供テンプレ（例）</h2>
@@ -213,18 +236,19 @@
       </div>
     </div>
   </section>
+
   <section class="contact" id="contact">
     <div class="container">
       <h2 class="contact__title">導入リスク診断（15分）</h2>
       <p class="contact__text">まずは現状をヒアリングし、「権限・ログ・評価」で何から整えるべきかを整理します。</p>
       <div class="contact__btn" style="text-align: center; margin-top: 30px;">
-        <!-- CONTACT: TimeRex + event -->
-        <a href="https://timerex.net/s/info_6c5e_d556/51fb7fcc" target="_blank" rel="noopener noreferrer"
-          class="btn btn--primary"
-          onclick="gtag('event','book_call_click',{location:'contact'});">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
+        <a href="#" class="btn btn--primary" onclick="return openTimerexWithTracking('contact');">
+          導入リスク診断（15分）を予約する<span class="arrow">→</span>
+        </a>
       </div>
     </div>
   </section>
 
 </body>
+
 </html>
