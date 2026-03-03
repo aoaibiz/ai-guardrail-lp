@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>会社概要 - AIガードレール</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-wrapper {
+            padding: 120px 20px 80px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .page-title {
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--color-accent);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+            letter-spacing: 0.1em;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 50px 40px;
+            backdrop-filter: blur(10px);
+            line-height: 1.8;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--color-cyan);
+            text-decoration: none;
+            transition: text-shadow 0.3s;
+        }
+
+        .back-link:hover {
+            text-shadow: 0 0 8px var(--color-cyan);
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .info-table th,
+        .info-table td {
+            padding: 20px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+
+        .info-table th {
+            color: var(--color-magenta);
+            width: 30%;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="blob-top"></div>
+    <div class="blob-bottom"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container__header">
+            <div class="logo">
+                <a href="index.html" style="text-decoration:none; color:inherit;">
+                    <span class="logo__brand">AI GUARDRAIL</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <h1 class="page-title">会社概要</h1>
+        <div class="content-box">
+            <table class="info-table">
+                <tr>
+                    <th>会社名</th>
+                    <td>株式会社タルムード</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>東京都港区新橋4丁目14-1<br>新橋AUN BLDG4階</td>
+                </tr>
+                <tr>
+                    <th>代表</th>
+                    <td>弓田大幾</td>
+                </tr>
+                <tr>
+                    <th>連絡先</th>
+                    <td><a href="mailto:info@talmudo9.com"
+                            style="color:var(--color-cyan); text-decoration:none;">info@talmudo9.com</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="text-align: center;">
+            <a href="index.html" class="back-link">← トップページに戻る</a>
+        </div>
+    </main>
+</body>
+
+</html>

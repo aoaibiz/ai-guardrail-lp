@@ -66,7 +66,8 @@
         </div>
 
         <div class="cta-group">
-          <a href="#contact" class="btn btn--primary">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
+          <a href="https://timerex.net/s/info_6c5e_d556/51fb7fcc" target="_blank" rel="noopener noreferrer"
+            class="btn btn--primary">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
           <a href="#docs" class="btn btn--secondary">テンプレ（規程/ログ/評価）を見る<span class="arrow">→</span></a>
         </div>
       </div>
@@ -152,37 +153,77 @@
         </div>
       </div>
       <div class="pricing__cta">
-        <a href="#contact" class="btn btn--primary">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
+        <a href="https://timerex.net/s/info_6c5e_d556/51fb7fcc" target="_blank" rel="noopener noreferrer"
+          class="btn btn--primary">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
       </div>
     </div>
   </section>
 
-  <section id="docs">
+  <section class="docs" id="docs">
     <div class="container">
-      <h2>提供テンプレ（例）</h2>
-      <ul>
-        <li>就業規則テンプレ</li>
+      <h2 class="docs__title">提供テンプレ（例）</h2>
+      <ul class="docs__list">
+        <li>就業規則（ガードレール）テンプレ</li>
         <li>監査ログ設計テンプレ</li>
-        <li>Evalチェックリスト</li>
+        <li>Evalチェックリスト（評価項目例）</li>
       </ul>
     </div>
   </section>
-  <section id="faq">
+
+  <section class="faq" id="faq">
     <div class="container">
-      <h2>FAQ</h2>
-      <p><b>Q. 権限は？</b> A. 最小権限から。</p>
-      <p><b>Q. セキュリティは？</b> A. 接続先/権限/ログ/停止条件を明文化。</p>
-      <p><b>Q. 精度が落ちたら？</b> A. Eval-firstで更新。</p>
-      <p><b>Q. 既存ツール連携は？</b> A. 可能。安全範囲から。</p>
-      <p><b>Q. 導入条件は？</b> A. 対象業務と責任者合意。</p>
+      <h2 class="faq__title">FAQ（よくある質問）</h2>
+      <div class="faq__items">
+        <dl class="faq-item">
+          <dt class="faq-item__q">Q. どこまで権限をAIに渡しますか？</dt>
+          <dd class="faq-item__a">業務ごとに許可操作を定義し、最小権限から開始します。危険操作は原則ブロックします。</dd>
+        </dl>
+        <dl class="faq-item">
+          <dt class="faq-item__q">Q. セキュリティ的に何を守りますか？</dt>
+          <dd class="faq-item__a">接続先/権限/ログ/例外時の停止条件を明文化し、監査可能な状態にします。</dd>
+        </dl>
+        <dl class="faq-item">
+          <dt class="faq-item__q">Q. 精度が落ちたらどうしますか？</dt>
+          <dd class="faq-item__a">Eval-firstでテストを更新し、原因→対策→再発防止を運用手順に反映します。</dd>
+        </dl>
+        <dl class="faq-item">
+          <dt class="faq-item__q">Q. Notion/Google Drive/Slackと繋げられますか？</dt>
+          <dd class="faq-item__a">可能です。安全な範囲から接続し、権限・ログ・評価をセットで設計します。</dd>
+        </dl>
+        <dl class="faq-item">
+          <dt class="faq-item__q">Q. 導入に必要な条件は？</dt>
+          <dd class="faq-item__a">対象業務の選定、責任者の合意、運用ルールの受け皿が必要です。</dd>
+        </dl>
+      </div>
     </div>
   </section>
-  <section id="contact">
+
+  <section class="contact" id="contact">
     <div class="container">
-      <h2>導入リスク診断（15分）</h2>
-      <p>Discordで連絡（フォーム準備中）</p>
+      <h2 class="contact__title">導入リスク診断（15分）</h2>
+      <p class="contact__text">まずは現状をヒアリングし、「権限・ログ・評価」で何から整えるべきかを整理します。</p>
+      <div class="contact__btn" style="text-align: center; margin-top: 30px;">
+        <a href="https://timerex.net/s/info_6c5e_d556/51fb7fcc" target="_blank" rel="noopener noreferrer"
+          class="btn btn--primary">導入リスク診断（15分）を予約する<span class="arrow">→</span></a>
+      </div>
     </div>
   </section>
+
+  <footer class="site-footer"
+    style="padding: 40px 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 60px;">
+    <div class="container">
+      <ul
+        style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+        <li><a href="about.html"
+            style="color: #aaa; text-decoration: none; font-size: 14px; transition: color 0.3s;">会社概要</a></li>
+        <li><a href="privacy.html"
+            style="color: #aaa; text-decoration: none; font-size: 14px; transition: color 0.3s;">プライバシーポリシー</a></li>
+        <li><a href="terms.html"
+            style="color: #aaa; text-decoration: none; font-size: 14px; transition: color 0.3s;">利用規約</a></li>
+      </ul>
+      <p style="color: #666; font-size: 12px;">&copy; 2026 株式会社タルムード. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 </body>
 
