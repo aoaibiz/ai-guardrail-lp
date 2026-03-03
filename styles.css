@@ -731,4 +731,77 @@ a {
   .docs__list li {
     text-align: center;
   }
+
+  /* --- 追加: スマホ向け視認性向上 --- */
+  .sp-br {
+    display: block;
+  }
+
+  .pc-br {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+
+  .hero__headline {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+
+  .hero__subcopy {
+    font-size: 15px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+
+  .concerns,
+  .flow,
+  .pricing,
+  .faq,
+  .docs,
+  .contact {
+    padding: 60px 0 !important;
+  }
+
+  .concerns__title,
+  .flow__title,
+  .pricing__title,
+  .faq__title,
+  .docs__title,
+  .contact__title {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .benefit-item,
+  .concern-card,
+  .price-card,
+  .faq-item {
+    padding: 25px 20px;
+  }
+
+  .flow-step {
+    padding: 25px 20px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .cta-group {
+    width: 100%;
+  }
+}
+
+.sp-br {
+  display: none;
 }
